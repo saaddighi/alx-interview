@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-tirangle = [[1]]
+triangle = [[1]]
 
 def pascal_triangle(n):
     if n <= 0:
@@ -11,5 +11,5 @@ def pascal_triangle(n):
         for j in range(1,i):
             row.append(tirangle[i-1][-j] + tirangle[i-1][j])
         row.append(1)
-        tirangle.append(row)
+        triangle.append(row)
     return tirangle
