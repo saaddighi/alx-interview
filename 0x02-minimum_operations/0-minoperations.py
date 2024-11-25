@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+
 """a typical interview question or test that is asked
     """
 
@@ -31,6 +31,8 @@ def minOperations(n) -> int:
         with open('tst.txt', 'r') as d_file:
             res = d_file.read()
         return op
-
+    elif n <= 1:
+        return 0
     else:
         return 0
+
