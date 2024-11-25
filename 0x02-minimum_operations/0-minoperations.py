@@ -3,7 +3,9 @@
     """
 
 def minOperations(n) -> int:
-    lst = []
+    """a function that takes a number(n) and returns the number of operations
+    needed to have H n number of times in a file using only the copy all and 
+    paste operations"""
     op = 0
     if n % 2 == 0:
         with open('test.txt', 'r') as file:
