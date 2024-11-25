@@ -1,0 +1,33 @@
+#!/usr/bin/python3
+
+
+def minOperations(n) -> int:
+    lst = []
+    op = 0
+    if n % 2 == 0:
+        with open('test.txt', 'r') as file:
+    
+            char = file.read()
+            ch = char*2
+        op = 1 + (n // 2)
+        for i in range((n // 2)):
+            with open ('tst.txt','a') as d_file:
+                d_file.write(ch)
+        with open('tst.txt', 'r') as d_file:
+            res = d_file.read()
+        return op 
+    elif n % 3 == 0:
+        with open('test.txt', 'r') as file:
+            
+            char = file.read()
+            ch = char*3
+            op = 3 + (n // 3)
+        for i in range((n // 3)):
+            with open ('tst.txt','a') as d_file:
+                d_file.write(ch)
+        with open('tst.txt', 'r') as d_file:
+            res = d_file.read()
+        return op
+
+    else:
+        return 0
