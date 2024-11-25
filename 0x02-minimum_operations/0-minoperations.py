@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-
+"""a typical interview question or test that is asked
+    """
 
 def minOperations(n) -> int:
     lst = []
